@@ -442,7 +442,7 @@ namespace Microsoft.Azure.SpatialAnchors.Unity.Examples
             // If the cloud portion of the anchor hasn't been created yet, create it
             if (cna.CloudAnchor == null)
             {
-                await cna.NativeToCloud();
+                cna.NativeToCloud();
             }
 
             // Get the cloud portion of the anchor
